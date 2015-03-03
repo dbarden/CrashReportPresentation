@@ -413,7 +413,7 @@ Binary Images:
 # Running symbolicatecrash
 
 
-DEVELOPER_DIR=\`xcode-select -print-path\` /Applications/Xcode.app/Contents/SharedFrameworks/DTDeviceKitBase.framework/Versions/A/Resources/symbolicatecrash -o <output_file> <input_crash_file>
+DEVELOPER\_DIR=\`xcode-select -print-path\` /Applications/Xcode.app/Contents/SharedFrameworks/DTDeviceKitBase.framework/Versions/A/Resources/symbolicatecrash -o <output_file> <input_crash_file>
 
 (aliases are your friend)
 
@@ -425,6 +425,7 @@ DEVELOPER_DIR=\`xcode-select -print-path\` /Applications/Xcode.app/Contents/Shar
 - Runs `otool` to verify the correct base address
 - Run `lipo` to make sure the arch slice is present
 - Run `atos` to perform the symbolication
+- It's a perl script. Read it if you dare :)
 
 ---
 #Ouput
